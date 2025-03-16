@@ -1,0 +1,28 @@
+/* All the CSS related to answers Page*/
+.answer {
+    display: flex;
+    flex-direction: row
+}
+
+.answerText {
+    width: 75%;
+}
+
+.answerAuthor {
+    margin-left: 5%;
+}
+
+.answer_author {
+    color: green;
+}
+
+.vote-button-separator {
+    border-top: 1px dashed #100101;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.small-button {
+    font-size: 12px; /* Adjust the font size as needed */
+    padding: 5px 10px; /* Adjust the padding as needed */
+}

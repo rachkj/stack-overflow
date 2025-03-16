@@ -1,0 +1,37 @@
+
+// const updateComment = async (req, res) => {
+//     try {
+//         const user = req.user;
+        
+//         if (user.type === 1) {
+//             return res.status(401).json({ error: 'Unauthorized: Guest user is not allowed to perform this action' });
+//         } else {
+//             const { cid, updatedText } = req.body;
+            
+//             // Find the original comment
+//             const originalComment = await Comment.findById(cid);
+            
+//             if (!originalComment) {
+//                 return res.status(404).json({ error: 'Comment not found' });
+//             }
+            
+//             // Check if the updater is the same as the poster of the comment
+//             if (originalComment.comment_by._id.toString() === user._id.toString()) {
+//                 // Update the comment text
+//                 originalComment.text = updatedText;
+//                 const updated = await originalComment.save();
+//                 return res.status(200).json(updated);
+//             } else {
+//                 return res.status(401).json({ error: 'Unauthorized: Only the original poster can update this comment' });
+//             }
+//         }
+//     } catch (error) {
+//         console.error("Error updating comment:", error);
+//         res.status(500).json({ message: "Error updating comment", error: error.message });
+//     }
+// };
+
+
+// router.post("/updateComment", updateComment);
+
+
